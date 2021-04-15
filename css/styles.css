@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Raleway";
+    src:url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff) format('woff'),
+    url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-text-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --alt-text-color: #FFFFFF;
+
+    --line-bg: #FFFFFF; /* верхняя линия */
+    --dark-bg: #2F303A; /* шапка + футер */
+    --card-bg: #FFFFFF; /* карточки команды */
+    --team--bg: #F5F4FA; /* шапка команды */
+    --main-bg: #E5E5E5;
+    
+
+    --main-font: "Roboto", sans-serif; /* основной текст */
+    --name-site: "Raleway", sans-serif; /* названия сайта */
+}
+
+body {
+   font-family: var(--main-font);
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--main-text-color);
+}
+/*Общий контейнер для центрирования и ограничения контента по ширине*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Логотип*/
+.logo-span {
+    font-family: var(--name-site);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.span-studio {
+    font-family: var(--name-site);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+.span-withe {
+    font-family: var(--name-site);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--alt-text-color);
+}
+/* сброс цвета ссылок и подчёркивания */
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+/* подсветка ссылок и кнопок */
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.link-nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+/*Почта Телефон Шапка*/
+.cap-contact {
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+/* сброс маркировки списков */
+.list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+/* сброс курсивного шрифта italic */
+.address {
+    font-style: inherit;
+}
+/*Выравнивание меню*/
+.menu {
+    display: inline-flex;
+}
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+.logo {
+    margin-right: 95px;
+}
+.page-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.page-header .cap-contact {
+    margin: 50px;
+}
+
+/*Кнопка*/
+.click {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--alt-text-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* эффективные решения для вашего бизнеса */
+.page-title { 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--alt-text-color);
+}
+/* заголовки h2 */
+.section-title {
+    font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 1.17x;
+    text-align: center;
+    color: var(--title-color);
+}
+/* заголовок h3 */
+.mini-title {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+/* Команда*/
+.team {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-color);
+}
+/*Параграфы описаний*/
+.paragraph {
+    line-height: 1.71;
+}
+/*Должность*/
+.position {  
+    font-size: 16px;
+    line-height: 1.19;
+}
+/*Фоны*/
+.dark-bg {
+    background-color: var(--dark-bg);
+}
+.team-bg {
+    background-color: var(--team--bg);
+}
+/*Карточки*/
+.card-bg {
+    background-color: var(--card-bg);
+}
+/*Футер Контакты*/
+.footer-contact {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*Адресс Киев - белым*/
+.kiev {
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--alt-text-color)
+}
+/*Курсор для кнопки*/
+.box {
+     cursor: pointer;
+}
+
+
+/*Страница Портфолио*/
+
+/* Кнопки */
+.click-bt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background: #F5F4FA;
+}
+
+.click-bt:hover,
+.click-bt:focus {
+    color: #FFFFFF;
+    background: #2196F3;
+}
+/* Заглавие картинок */
+.title-card {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: #212121;;
+}
+/* Подсветка текущей страницы */
+.active {
+    color: var(--accent-color);
+}
