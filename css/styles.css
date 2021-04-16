@@ -6,7 +6,30 @@
     font-style: normal;
     font-display: swap;
 }
-
+/*Обнуление стилей*/
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+    margin-bottom: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 :root {
     --main-text-color: #757575;
     --title-color: #212121;
@@ -99,7 +122,8 @@ letter-spacing: 0.02em;
 }
 /*Выравнивание меню*/
 .menu {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
 }
 .menu-item:not(:last-child) {
     margin-right: 50px;
@@ -110,14 +134,23 @@ letter-spacing: 0.02em;
 .page-header .container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    padding: 25px 0px;
 }
-.page-header .cap-contact {
-    margin: 50px;
+.cont-list {
+    margin-left: auto;
 }
-
+.page-header {
+    display: flex;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
 /*Кнопка*/
 .click {
+    display: block;
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -126,9 +159,14 @@ letter-spacing: 0.02em;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* эффективные решения для вашего бизнеса */
 .page-title { 
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -136,6 +174,8 @@ letter-spacing: 0.02em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--alt-text-color);
+    margin-left: auto;
+    margin-right: auto;
 }
 /* заголовки h2 */
 .section-title {
@@ -144,6 +184,7 @@ letter-spacing: 0.02em;
     line-height: 1.17x;
     text-align: center;
     color: var(--title-color);
+    margin-bottom: 50px;
 }
 /* заголовок h3 */
 .mini-title {
@@ -160,25 +201,69 @@ letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.19;
     color: var(--title-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 /*Параграфы описаний*/
 .paragraph {
+    width: 270px;
+    font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+.details {
+    display: flex;
+}
+.details-item:not(:last-child) {
+    margin-right: 30px;
+}
+.section-detal {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+/* Занятость в фото */
+.work-foto {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+.section-foto {
+    padding-bottom: 95px;
 }
 /*Должность*/
 .position {  
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.foto-card {
+    display: flex;
+    justify-content:space-between;
 }
 /*Фоны*/
+.footer-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+}
 .dark-bg {
     background-color: var(--dark-bg);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .team-bg {
     background-color: var(--team--bg);
+    padding-top: 95px;
+    padding-bottom: 95px;
 }
 /*Карточки*/
 .card-bg {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
     background-color: var(--card-bg);
 }
 /*Футер Контакты*/
@@ -192,6 +277,14 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--alt-text-color)
 }
+.city {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.mail {
+    margin-bottom: 9px;
+}
+
 /*Курсор для кнопки*/
 .box {
      cursor: pointer;
@@ -225,4 +318,16 @@ color: #212121;;
 /* Подсветка текущей страницы */
 .active {
     color: var(--accent-color);
+}
+.position-portf {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+/* Карточки bg портфолио */
+.card-bg-portf {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
