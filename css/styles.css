@@ -319,6 +319,7 @@ color: var(--alt-text-color)
 }
 .but {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .but-section {
@@ -326,30 +327,37 @@ color: var(--alt-text-color)
     padding-bottom: 50px;
 }
 
-
 /* Заглавие картинок */
 .title-card {
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: #212121;;
-}
-/* Подсветка текущей страницы */
-.active {
-    color: var(--accent-color);
+color: #212121;
+margin: 20px 24px 4px;
 }
 .position-portf {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin: 0px 24px 20px;
+}
+/* Подсветка текущей страницы */
+.active {
+    color: var(--accent-color);
 }
 /* Карточки bg портфолио */
 .card-bg-portf {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 30px;
+     flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .line-one {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
 }
