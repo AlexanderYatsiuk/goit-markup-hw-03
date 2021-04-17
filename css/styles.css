@@ -140,6 +140,7 @@ letter-spacing: 0.02em;
     margin-left: auto;
 }
 .page-header {
+    border: 1px solid #ECECEC;
     display: flex;
 }
 .nav {
@@ -295,19 +296,37 @@ color: var(--alt-text-color)
 
 /* Кнопки */
 .click-bt {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--title-color);
     background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
 }
-
+.click-but {
+    padding: 6px 22px;
+}
+.click-item:not(:last-child) {
+    margin-right: 8px;
+}
 .click-bt:hover,
 .click-bt:focus {
     color: #FFFFFF;
     background: #2196F3;
 }
+.but {
+    display: flex;
+    justify-content: center;
+}
+.but-section {
+    padding-top: 95px;
+    padding-bottom: 50px;
+}
+
+
 /* Заглавие картинок */
 .title-card {
 font-size: 18px;
@@ -330,4 +349,7 @@ color: #212121;;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+}
+.line-one {
+    display: flex;
 }
