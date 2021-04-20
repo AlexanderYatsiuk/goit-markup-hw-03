@@ -203,8 +203,10 @@ letter-spacing: 0.02em;
     line-height: 1.19;
     color: var(--title-color);
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
+}
+.team-block {
+    padding: 30px 59px 10px 60px;
 }
 /*Параграфы описаний*/
 .paragraph {
@@ -228,7 +230,6 @@ letter-spacing: 0.02em;
 .work-foto {
     display: flex;
     justify-content:space-between;
-    margin-top: 50px;
 }
 .section-foto {
     padding-bottom: 95px;
