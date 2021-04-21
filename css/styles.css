@@ -119,6 +119,7 @@ letter-spacing: 0.02em;
 /* сброс курсивного шрифта italic */
 .address {
     font-style: inherit;
+    margin-top: 20px;
 }
 /*Выравнивание меню*/
 .menu {
@@ -280,7 +281,6 @@ letter-spacing: 0.03em;
 color: var(--alt-text-color)
 }
 .city {
-    margin-top: 20px;
     margin-bottom: 9px;
 }
 .mail {
@@ -322,6 +322,7 @@ color: var(--alt-text-color)
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 56px;
 }
 .but-section {
     padding-top: 95px;
@@ -334,7 +335,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
-margin: 20px 24px 4px;
+padding: 20px 24px 4px;
 }
 .position-portf {
     font-size: 16px;
@@ -354,7 +355,7 @@ margin: 20px 24px 4px;
     box-sizing: border-box;
     margin-left: 30px;
     margin-top: 30px;
-     flex-basis: calc((100% - 3 * 30px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .line-one {
     display: flex;
