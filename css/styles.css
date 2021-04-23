@@ -207,7 +207,7 @@ letter-spacing: 0.02em;
     margin-bottom: 10px;
 }
 .team-block {
-    padding: 30px 59px 10px 60px;
+    padding: 30px 60px;
 }
 /*Параграфы описаний*/
 .paragraph {
@@ -240,7 +240,6 @@ letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 30px;
 }
 .foto-card {
     display: flex;
@@ -280,10 +279,10 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--alt-text-color)
 }
-.city {
+.city:not(:last-child) {
     margin-bottom: 9px;
 }
-.mail {
+.mail:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -322,7 +321,7 @@ color: var(--alt-text-color)
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 56px;
+    margin-bottom: 50px;
 }
 .but-section {
     padding-top: 95px;
@@ -330,19 +329,21 @@ color: var(--alt-text-color)
 }
 
 /* Заглавие картинок */
+.box-car {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
 .title-card {
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
-padding: 20px 24px 4px;
 }
 .position-portf {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin: 0px 24px 20px;
 }
 /* Подсветка текущей страницы */
 .active {
@@ -351,7 +352,7 @@ padding: 20px 24px 4px;
 /* Карточки bg портфолио */
 .card-bg-portf {
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
     box-sizing: border-box;
     margin-left: 30px;
     margin-top: 30px;
